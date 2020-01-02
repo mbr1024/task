@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<!-- 数据库驱动类 -->
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<!-- 数据库url -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/task?characterEncoding=utf-8</property>
+		<!-- 数据库用户名 -->
+		<property name="user">root</property>
+		<!-- 数据库密码 -->
+		<property name="password">111</property>
+		
+		<!-- 当数据库连接池中连接用尽后，一次向数据库服务器申请的连接数 -->
+		<property name="acquireIncrement">3</property>
+		<!-- 初始化数据库连接池时，申请的数据库连接数-->
+		<property name="initialPoolSize">10</property>
+		<!-- 数据库连接池中最小连接数 -->
+		<property name="minPoolSize">10</property>
+		<!-- 数据库连接池中最大连接数 -->
+		<property name="maxPoolSize">100</property>
+	</default-config>
+</c3p0-config>
